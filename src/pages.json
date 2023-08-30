@@ -1,0 +1,118 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "启动页"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "uni-app",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/startup/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    },
+    {
+      "path": "pages/list/index",
+      "style": {
+        "navigationBarTitleText": "列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/details/index",
+      "style": {
+        "navigationBarTitleText": "列表详情页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/about/index",
+      "style": {
+        "navigationBarTitleText": "关于我",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "entryPagePath": "pages/startup/index",
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8"
+    // "backgroundColor": "#F8F8F8"
+    // "usingComponents": {
+    //   "collapse-tree-item": "/components/collapse-tree-item"
+    // },
+    // "renderingMode": "seperated", // 仅微信小程序，webrtc 无法正常时尝试强制关闭同层渲染
+    // "pageOrientation": "portrait", //横屏配置，全局屏幕旋转设置(仅 APP/微信/QQ小程序)，支持 auto / portrait / landscape
+    // "rpxCalcMaxDeviceWidth": 960,
+    // "rpxCalcBaseDeviceWidth": 375,
+    // "rpxCalcIncludeWidth": 750
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "iconfontSrc": "static/iconfont.ttf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "iconPath": "static/tabbar/list.png",
+        "selectedIconPath": "static/tabbar/list-selected.png",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "iconPath": "static/tabbar/about.png",
+        "selectedIconPath": "static/tabbar/about-selected.png",
+        "text": "关于"
+      }
+    ]
+  },
+  // "tabBar": {
+  //   "color": "#7A7E83", // tab 上的文字默认颜色
+  //   "selectedColor": "#3cc51f", // tab 上的文字选中时的颜色
+  //   "borderStyle": "black", // tabbar 上边框的颜色，可选值 black/white
+  //   "backgroundColor": "red", // tab 的背景色
+  //   "list": [
+  //     {
+  //       // 最少2个、最多5个 tab
+  //       "pagePath": "pages/index/index", // 页面路径，必须在 pages 中先定义
+  //       "iconPath": "static/tabbar/home.png", // 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px
+  //       "selectedIconPath": "static/tabbar/home-selected.png", // 选中时的图片路径
+  //       "text": "首页" // tab 上按钮文字
+  //     },
+  //     {
+  //       "pagePath": "pages/about/index",
+  //       "iconPath": "static/tabbar/my.png",
+  //       "selectedIconPath": "static/tabbar/my-active.png",
+  //       "text": "我的"
+  //     }
+  //   ]
+  // },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  }
+}
